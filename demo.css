@@ -1,0 +1,646 @@
+/* Toàn bộ phần tử body */
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6; /* Tăng khoảng cách giữa các dòng */
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding-top: 112px; /* Dành chỗ cho header cố định */
+}
+
+/* Header cố định trên cùng */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Đảm bảo header nằm trên các phần khác */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng cho đẹp mắt */
+    background-color: #a2c9ef;
+    display: flex; /* Sử dụng flexbox */
+    justify-content: space-between; /* Chia đều không gian giữa các nút */
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+}
+
+header img {
+    height: 60px;
+}
+
+/* Tiêu đề trang (h1) */
+h1 {
+    color: rgb(250, 21, 21);
+    font-size: 1.75rem;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+    margin-right: 70px;
+} 
+ 
+.multitasking a {
+    float: right;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 1px 2px; /* Kích thước của nút */
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: -70px;
+  }
+    .multitasking a:hover {
+    background-color: #007bff;
+    color: white;
+  }
+.multitasking ul {
+    list-style-type: none;
+  }
+ /* Style cho nút bấm */
+ .dropdown-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0426ae;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 397px;
+    text-align: left;
+    margin-top: -10px;
+    border-radius: 5px;
+    height: 55px;
+}
+
+/* Style cho menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cee1f8;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Style cho từng mục trong menu */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus {
+    background-color: #4257f7;
+}
+
+/* Style cho nội dung */
+.content {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+/* Ẩn nội dung các mục mặc định */
+.content-section {
+    display: none;
+}
+
+
+
+/* Ẩn tất cả nội dung ban đầu */
+.hidden-content {
+    display: none;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -290px;
+    margin-left: 415px;
+    width: 30%;
+    background-color: #58abf9;
+    padding: 2px 25px;
+    border-radius: 8px;
+}
+
+/* Tùy chỉnh các nút */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Các nút sẽ được xếp theo cột */
+    width: 20%; /* Các nút chiếm 1/5 chiều rộng màn hình */
+    justify-content: flex-start; /* Căn các nút về bên trái */
+    margin-top: 10px;
+}
+
+/* Tùy chỉnh phong cách cho các nút */
+.custom-button {
+    width: 100%; /* Các nút sẽ chiếm toàn bộ chiều rộng của .button-container (20%) */
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    background-color: #45a049;
+}
+
+
+
+
+#contentC-HI .KVNN{
+    width: 28%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -245px;
+    margin-left: 550px;
+    position: absolute;
+}
+#contentC-M2 .KVNN{
+    width: 28%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -245px;
+    margin-left: 550px;
+    position: absolute;
+}
+#contentC-M1 .KVNN{
+    width: 28%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -245px;
+    margin-left: 550px;
+    position: absolute;
+}
+#contentC-M3 .KVNN{
+    width: 28%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -370px;
+    margin-left: 550px;
+    position: absolute;
+}
+#contentC-M4 .KVNN{
+    width: 26%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -370px;
+    margin-left: 550px;
+    position: absolute;
+}
+#contentC-M5 .KVNN{
+    width: 33%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -480px;
+    margin-left: 530px;
+    position: absolute;
+}
+#contentC-M6 .KVNN{
+    width: 33%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -250px;
+    margin-left: 530px;
+    position: absolute;
+}
+#contentC-M7 .KVNN{
+    width: 32%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -310px;
+    margin-left: 530px;
+    position: absolute;
+}
+#contentC-M8 .KVNN{
+    width: 31%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -420px;
+    margin-left: 530px;
+    position: absolute;
+}
+#contentC-M9 .KVNN{
+    width: 29%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -330px;
+    margin-left: 530px;
+    position: absolute;
+}
+#contentC-M10 .KVNN{
+    width: 31%;
+    justify-content: flex-end; /* Căn phần tử con về phía bên phải */
+    margin-top: -240px;
+    margin-left: 530px;
+    position: absolute;
+}
+#contentC-M5{
+     margin-top: -330px;
+}
+
+
+.KPHH-M3{
+    width: 50%;
+}
+.KPHH-M33{
+    width: 50%;
+    margin-top: -8px;
+}
+.ND{
+    float: right;
+    margin-top: -515px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#contentD-M3{
+    margin-top: -370px;
+    margin-left: 450px;
+}
+#contentE-M3{
+    margin-top: -330px;
+}
+#contentF-M3{
+    margin-top: -330px;
+}
+#contentD-M4{
+    margin-top: -370px;
+    margin-left: 450px;
+}
+#contentD-M6{
+    margin-top: -370px;
+    margin-left: 450px;
+}
+#contentD-M7{
+    margin-top: -370px;
+    margin-left: 450px;
+}
+.KPHH-M4{
+    width: 45%;
+}
+.KPHH-M5{
+    width: 40%;
+}
+.KPHH-M55{
+    width: 40%;
+}
+.ND1{
+    float: right;
+    margin-top: -60px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#contentE-M4{
+    margin-top: -330px;
+}
+#contentF-M4{
+    margin-top: -330px;
+}
+#contentD-M5{
+    margin-top: -370px;
+}
+.ND2{
+    float: right;
+    margin-top: -850px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#contentE-M5{
+    margin-top: -370px;
+    margin-left: 490px;
+}
+#contentF-M5{
+    margin-top: -370px;
+}
+#contentF-M5 .KPHH{
+    width: 70% ;
+}
+.ND3{
+    float: right;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -15px;
+}
+.KPHH-M6{
+    width: 30%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -470px;
+}
+.KPHH-M7{
+    width: 30%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -470px;
+}
+.ND4{
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -15px;
+}
+#contentD-M8{
+    margin-top: -360px;
+    margin-left: 450px;
+}
+.ND5{
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -490px;
+}
+#contentE-M8{
+    margin-top: -360px;
+    margin-left: 450px;
+}
+#contentF-M8{
+    margin-top: -360px;
+    margin-left: 450px;
+}
+.ND6{
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#contentD-M9{
+    margin-top: -375px;
+    margin-left: 470px;
+}
+
+#contentD-M10{
+    margin-top: -375px;
+    margin-left: 470px;
+}
+#contentF-M9{
+    margin-top: -340px;
+}
+.KPHH-M9{
+    width: 47%;
+}
+
+
+.layout {
+    position: relative;
+
+}
+
+.box {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    max-width: 100px;
+}
+
+.box:hover {
+    background-color: #0056b3;
+}
+
+.image-popup img {
+    position: absolute;
+    width: 380px;
+    height: 85%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Vị trí cố định của từng hình ảnh */
+#image1,#image2,#image3,#image4,#image5,#image6,#image7,#image8,#image9,#image10,#image11,#image12,#image13,#image14,#image15,#image16,#image17,#image18 {
+    top: 100px;
+    left: 1120px;
+}
+#image32,#image33{
+    top: 104px;
+    left: 1020px;
+    max-width: 400px;
+}
+#image34,#image35,#image36{
+    top: 104px;
+    left: 1120px;
+    max-width: 375px;
+}
+#image37,#image38,#image39,#image40{
+    top: 104px;
+    left: 1020px;
+    max-width: 375px;
+}
+#image41,#image42,#image43{
+    top: 104px;
+    left: 1020px;
+    max-width: 375px;
+}
+#image44,#image45,#image46,#image47{
+    top: 104px;
+    left: 1020px;
+    max-width: 400px;
+}
+#image48,#image49{
+    top: 100px;
+    left: 1050px;
+    max-width: 380px;
+}
+#image19,#image20,#image21,#image22,#image23{
+    top: 100px;
+    left: 1020px;
+    width: 450px;
+}
+#image24,#image25,#image26,#image27,#image28{
+    top: 100px;
+    left: 1020px;
+    width: 450px;
+}
+#image29,#image30,#image31{
+    top: 100px;
+    left: 1020px; 
+    width: 450px;
+}
+
+
+
+
+
+.hinhmota{
+    display: flex;          /* Sử dụng Flexbox */
+    position: absolute;
+}
+.hinhmota1{
+    display: flex;          /* Sử dụng Flexbox */
+    position: absolute;
+    margin-left: -100px;
+}
+.hinhmota img{
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.hinhmota1 img{
+    width: 25%;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.HIGH{
+    width: 23%;
+    margin-left: 660px;
+    margin-top: -290px;
+    position: absolute;
+}
+.AC{
+    width: 33%;
+    margin-left: 555px;
+    margin-top: -290px;
+    position: absolute;
+}
+.AC-TH8{
+    width: 32%;
+    margin-left: 555px;
+    margin-top: -305px;
+    position: absolute;
+}
+
+.AC-TH9{
+    width: 31%;
+    margin-left: 555px;
+    margin-top: -320px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Định dạng bảng */
+.my-table1 {
+    width: 50%;
+    border-collapse: collapse;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -24px;
+  }
+
+  .my-table4 {
+    width: 60%;
+    border-collapse: collapse;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -24px;
+  }
+  
+  /* Định dạng các ô trong bảng */
+  .my-table1 td {
+    border: 3px solid #58abf9;
+    padding: 10px;
+  }
+  .my-table4 td {
+    border: 3px solid #58abf9;
+    padding: 10px;
+  }
+  
+  /* Tùy chỉnh màu nền cho hàng chẵn */
+  .my-table1 tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .my-table4 tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  /* Tùy chỉnh màu nền cho hàng lẻ */
+  .my-table1 tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  .my-table4 tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  .DOKIEM {
+    position: absolute; /* Giữ vị trí khối cha */
+    width: 725px; /* Đặt chiều rộng cố định */
+    height: 503px; /* Chiều cao của khu vực hình ảnh */
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+.scrollable {
+    max-height: 100%; /* Chiều cao tối đa */
+    overflow-y: scroll; /* Kích hoạt cuộn dọc */
+    overflow-x: hidden; /* Ẩn cuộn ngang */
+    
+    /* Ẩn thanh cuộn nhưng vẫn cuộn được */
+    scrollbar-width: none; /* Ẩn thanh cuộn trong Firefox */
+}
+
+.scrollable::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trong trình duyệt WebKit */
+}
+
+.scrollable img {
+    display: block; /* Mỗi ảnh chiếm một hàng */
+    margin-bottom: 10px; /* Khoảng cách giữa các ảnh */
+}
+
+
+
+
+
+/* Định dạng vùng chứa bảng */
+.table-container,.table-containerr {
+    max-height: 480px; /* Chiều cao cố định cho vùng cuộn */
+    overflow-y: auto; /* Chỉ kích hoạt cuộn dọc */
+    position: absolute; /* Tạo ngữ cảnh cho sticky */
+    border: solid #ccc; /* Đường viền cho bảng */
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: -25px;
+}
+
+/* Định dạng bảng */
+.my-table2,.my-table3 {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+}
+
+/* Định dạng ô trong bảng */
+.my-table2 th,.my-table3 th,
+.my-table2 td,.my-table3 td {
+    padding: 15px; /* Khoảng cách nội dung */
+    border: solid #ccc; /* Đường viền các ô */
+    text-align: left; /* Căn trái */
+}
+
+/* Định dạng tiêu đề bảng (thead) */
+.my-table2 thead th,.my-table3 thead th {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề */
+    position: sticky; /* Cố định tiêu đề khi cuộn */
+    top: 0; /* Dính tiêu đề lên trên */
+    z-index: 2; /* Đảm bảo tiêu đề nằm trên nội dung */
+}
+
+/* Ẩn thanh cuộn nhưng vẫn cuộn được */
+.table-container::-webkit-scrollbar,.table-containerr::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên trình duyệt Webkit */
+}
+.table-container,.table-containerr {
+    -ms-overflow-style: none; /* Ẩn thanh cuộn trên IE */
+    scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+}
+
+
+.DOKIEMM {
+    position: absolute; /* Giữ vị trí khối cha */
+    margin-top: 20px;
+    margin-left: -30px;
+}
